@@ -18,6 +18,17 @@
     grid-template-row: repeat(2, 1fr);
     display: grid;
 }
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
 
 .box1{
     height: 100px;
@@ -31,7 +42,7 @@
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    background-color: aquamarine;
+    background-color: rgb(217, 255, 127);
     margin: 10px;
     
 }
@@ -40,7 +51,7 @@
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    background-color: aquamarine;
+    background-color: rgb(255, 127, 202);
     margin: 10px;
 }
 
@@ -48,7 +59,7 @@
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    background-color: aquamarine;
+    background-color: rgb(144, 145, 192);
     margin: 10px;
     
 }
