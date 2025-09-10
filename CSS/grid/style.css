@@ -17,6 +17,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-row: repeat(2, 1fr);
     display: grid;
+
+    
 }
 .header{
     grid-column-start: 1;
@@ -83,4 +85,7 @@
     width: 300px;
     background-color: rgb(225, 158, 70);
     
+}
+.footer{
+
 }
