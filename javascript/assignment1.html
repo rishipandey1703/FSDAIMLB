@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter h1 {
+            font-size: 50px;
+            color: rgb(159, 19, 124);
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>Counter</h1></div>
+        <div id="counter"><h1>0</h1></div>
+        <div>
+            <button onclick="plus()"> + </button>
+            <button onclick="minus()"> - </button>
+        </div>
+    </div>
+
+    <script>
+        let counter = 0;
+
+        function updateCounter() {
+            document.getElementById("counter").innerHTML = <h1>${counter}</h1>;
+        }
+
+        function plus() {
+            counter++;
+            updateCounter();
+        }
+
+        function minus() {
+            counter--;
+            updateCounter();
+        }
+    </script>
+</body>
+</html>
